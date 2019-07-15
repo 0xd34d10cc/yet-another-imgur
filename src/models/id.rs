@@ -4,7 +4,7 @@ use serde::{Serialize, Deserialize};
 pub struct ImageId(pub i32);
 
 impl ImageId {
-    pub fn inner(&self) -> i32 {
+    pub fn inner(self) -> i32 {
         self.0
     }
 }
